@@ -1,0 +1,44 @@
+h1 {
+    color: blue;
+    text-align: center
+}
+
+h2 {
+    color: blue;
+    text-align: center
+}
+
+h3 {
+    color: blue;
+    text-align: center
+}
+
+h4 {
+    color: blue;
+    text-align: center
+}
+
+h5 {
+    color: blue;
+    text-align: center
+}
+
+h6 {
+    color: blue;
+    text-align: center
+}
+
+p {
+    color: black;
+    text-align: left
+}
+
+body {
+    font-family: wingdings;
+}
+
+img {
+    display: block;
+    margin: auto
+}
+
