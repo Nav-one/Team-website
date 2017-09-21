@@ -1,36 +1,30 @@
 h1 {
     color: blue;
-    border: 1px solid black;
     text-align: center
 }
 
 h2 {
     color: blue;
-    border: 1px solid black;
     text-align: center
 }
 
 h3 {
     color: blue;
-    border: 1px solid black;
     text-align: center
 }
 
 h4 {
     color: blue;
-    border: 1px solid black;
     text-align: center
 }
 
 h5 {
     color: blue;
-    border: 1px solid black;
     text-align: center
 }
 
 h6 {
     color: blue;
-    border: 1px solid black;
     text-align: center
 }
 
@@ -40,9 +34,11 @@ p {
 }
 
 body {
-    font-family: Comic Sans MS;
+    font-family: wingdings;
 }
 
 img {
-    text-align: center
+    display: block;
+    margin: auto
 }
+
