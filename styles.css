@@ -1,7 +1,6 @@
 h1 {
     color: black;
     text-align: center;
-
 }
 
 h2 {
@@ -36,8 +35,7 @@ p {
 
 body {
     font-family: Comic Sans MS;
-    align-content: center
-    background:
+    align-content: center background:
 }
 
 img {
@@ -68,4 +66,17 @@ p {
 #pulcinella1 {
     height: 300px;
     width: 240px;
+}
+
+#favheader {
+    text-align: left;
+    color: black;
+    font-family: sans-serif;
+    margin-top: 60px;
+    margin-bottom: auto;
+}
+
+li {
+    font-family: sans-serif;
+    margin-bottom: 3px
 }
