@@ -1,6 +1,7 @@
 h1 {
-    color: blue;
-    text-align: center
+    color: black;
+    text-align: center;
+
 }
 
 h2 {
@@ -62,4 +63,9 @@ p {
 
 #para1 {
     background:
+}
+
+#pulcinella1 {
+    height: 300px;
+    width: 240px;
 }
