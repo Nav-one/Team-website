@@ -79,7 +79,7 @@ p {
 li {
     font-family: sans-serif;
     margin-bottom: 3px;
-    text-align: center
+
 }
 
 #hhome {
@@ -90,5 +90,7 @@ li {
 }
 
 ol {
-    text-align: center
+    font-family: sans-serif;
+    margin-bottom: 3px;
+
 }
