@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--  <link rel = "stylesheet " href = "styles.css " > -->
+
     <title> Giorvi's Webpage </title>
 </head>
 
@@ -18,30 +16,28 @@
         background: white;
     }
 
-    h1 {
+    #ws {
+        text-align: center;
+    }
+
+    #h{
         color: blue;
         text-align: center;
     }
 
-    p {
-        text-align: center;
-    }
-
-    h5 {
-        text-align: center;
-    }
-
-    h3 {
+    #title {
         color: blue;
         text-align: center;
+        background: lightblue
     }
 </style>
 
 <body>
-
-    <h1> Giorvis Incredible WebPage </h1>
+    <h1 id="title"> Giorvis Incredible WebPage </h1>
     <blockquote>
-        <p> The fastest car is rental car <cite title="top gear"> Clarkson </cite></p>
+        <h4 class="text-center ">"The fastest car is a rental car."
+            <footer><cite title="Squid">Jermey Clarkson</cite></footer>
+        </h4>
     </blockquote>
 
 
@@ -73,10 +69,10 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <h3> Some of my favorite webesites </h3>
+                <h3 id=h eading> Some of my favorite webesites </h3>
             </div>
             <div class="col-sm-6">
-                <h3> My goals after grauation </h3>
+                <h3 id=h eading> My goals after grauation </h3>
             </div>
         </div>
     </div>
@@ -87,53 +83,53 @@
                 <table class="table table-bordered">
                     <tr>
                         <th>
-                            <h3> Websites</h3>
+                            <h3 id=h eading> Websites</h3>
                         </th>
                         <th>
-                            <h3> links </h3>
+                            <h3 id=h eading> links </h3>
                         </th>
                     </tr>
 
                     <tr>
                         <td>
-                            <p>Apple Computer</p>
+                            <p id="ws">Apple Computer</p>
                         </td>
                         <td>
-                            <p> <a href="https://www.apple.com" target="_blank"> Apple.com </a> </p>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <p> ECS Tuning </p>
-                        </td>
-                        <td>
-                            <p> <a href="https://www.ecstuning.com" target="_blank"> ECStuning.com </a> </p>
+                            <p id="ws"> <a href="https://www.apple.com" target="_blank"> Apple.com </a> </p>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <p> Youtube </p>
+                            <p id="ws"> ECS Tuning </p>
                         </td>
                         <td>
-                            <p> <a href="https://www.youtube.com" target="_blank"> YouTube.com </a> </p>
+                            <p id="ws"> <a href="https://www.ecstuning.com" target="_blank"> ECStuning.com </a> </p>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <p> Netflix </p>
+                            <p id="ws"> Youtube </p>
                         </td>
                         <td>
-                            <p> <a href="https://www.netflix.com" target="_blank"> Netflix.com</a></p>
+                            <p id="ws"> <a href="https://www.youtube.com" target="_blank"> YouTube.com </a> </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="ws"> Netflix </p>
+                        </td>
+                        <td>
+                            <p id="ws"> <a href="https://www.netflix.com" target="_blank"> Netflix.com</a></p>
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="col-sm-6">
 
-                <h5>
+                <h5 class="text-center">
                     <ol>
                         <li> Go to college </li>
                         <li> Graduate from college </li>
@@ -155,8 +151,8 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h3>Some of my favorite things</h3>
-                <h5>
+                <h3 id="h">Some of my favorite things</h3>
+                <h5 class="text-center">
                     <ul>
                         <li> Cars </li>
                         <li> listening to music </li>
@@ -167,9 +163,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 
 </body>
