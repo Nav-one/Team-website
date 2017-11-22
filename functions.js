@@ -1,22 +1,13 @@
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
+// Greeting
 
 function randomGreeting() {
     var greetings = ["Hi", "Howdy", "Bonjour", "Ciao", "Buenos días"];
     var randomNum = Math.floor(Math.random() * 5);
     return greetings[randomNum];
-=======
+}
+
+//Date Message
+
 function dateMessage() {
     var currentDate = new Date();
     var day = currentDate.getDate();
@@ -28,5 +19,4 @@ function dateMessage() {
 
     return "Today is " + dayAr[days] + ", " + months[month] + " " + day + ", " + year;
 
->>>>>>> origin/master
 }
