@@ -26,37 +26,27 @@ function dateMessage() {
 function birthdayCountDown(happybirthday) {
     var today = new Date();
 
-    var birthday = new Date(happybirthday);
+    var myBirthday = new Date(happybirthday);
 
-    var days_exact = ((birthday.getTime() - today.getTime()) / 86400000);
+    var bday = new Date(today.getFullYear(), myBirthday[1] - 1, myBirthday[0]);
 
-    var days_bd = Math.floor(days_exact);
+    if (today.getTime() > bday.getTime()) {
 
-    var hours_bd = Math.floor((days_exact % days_bd) * 24);
-
-    var minutes_bd = Math.floor((((days_exact % days_bd) * 24) % hours_bd) * 60);
-
-    if (days_bd < 0) {
-        return
+        bday.setFullYear(bday.getFullYear() + 1);
     }
 
-    document.write("The time until my birthday is: ", days_bd, " days, ", hours_bd, " hours, and ", minutes_bd, " minutes!", "</br>", "</br>");
+    var diff = bday.getTime() - today.getTime();
+
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+    var hours = Math.floor(days / (1000 * 60 * 60));
+
+    var minutes = Math.floor(hours / (1000 * 60));
+
+    document.write("The time until my birthday is: ", days, " days, ", hours, " hours, and ", minutes, " minutes!", "</br>", "</br>");
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
