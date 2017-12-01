@@ -1,4 +1,4 @@
-// Greeting
+//Zach's Greeting
 
 function randomGreeting() {
     var greetings = ["Hi", "Howdy", "Bonjour", "Ciao", "Buenos días"];
@@ -6,7 +6,7 @@ function randomGreeting() {
     return greetings[randomNum];
 }
 
-//Date Message
+//Giorvi's Date Message
 
 function dateMessage() {
     var currentDate = new Date();
@@ -21,33 +21,34 @@ function dateMessage() {
 
 }
 
-//Birthday Countdown
+//Brandon's Birthday Countdown
 
 function birthdayCountDown(happybirthday) {
     var today = new Date();
 
     var myBirthday = new Date(happybirthday);
 
-    var bday = new Date(today.getFullYear(), myBirthday[1] - 1, myBirthday[0]);
+    myBirthday.setFullYear(today.getFullYear());
 
-    if (today.getTime() > bday.getTime()) {
+    if (today.getTime() > myBirthday.getTime()) {
 
-        bday.setFullYear(bday.getFullYear() + 1);
+        myBirthday.setFullYear(today.getFullYear() + 1);
     }
 
-    var diff = bday.getTime() - today.getTime();
+    var diff = myBirthday.getTime() - today.getTime();
 
-    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    var days_exact = ((myBirthday.getTime() - today.getTime()) / 86400000);
 
-    var hours = Math.floor(days / (1000 * 60 * 60));
+    var days = Math.floor(days_exact);
 
-    var minutes = Math.floor(hours / (1000 * 60));
+    var hours = Math.floor((days_exact % days) * 24);
 
-    document.write("The time until my birthday is: ", days, " days, ", hours, " hours, and ", minutes, " minutes!", "</br>", "</br>");
+    var minutes = Math.floor((((days_exact % days) * 24) % hours) * 60);
+
+    return "The time until my birthday is: " + days + " days, " + hours + " hours, and " + minutes + " minutes!" + "</br>" + "</br>";
 
 
 }
-
 
 
 
