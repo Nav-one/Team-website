@@ -18,7 +18,6 @@ function dateMessage() {
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var year = currentDate.getFullYear();
 
-
     if (day == 1 && 21 && 31) {
         end = "st";
 
