@@ -58,8 +58,8 @@ function birthdayCountDown(happybirthday) {
 
 
 
-//Brandon's Super Secret Functions that is better than Matthew Gao's
-function hello(min, max) {
+//Brandon's Super Secret Functions (1-100 odd/even) that is better than Matthew Gao's
+function even(min, max) {
     var num = Math.floor((max - min + 1) * Math.random());
 
 
@@ -75,7 +75,7 @@ function hello(min, max) {
 
 }
 
-function goodbye(min, max) {
+function odd(min, max) {
     var numodd = Math.floor((max - min + 1) * Math.random());
 
 
