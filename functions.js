@@ -9,6 +9,7 @@ function randomGreeting() {
 //Date Message
 
 function dateMessage() {
+    var end = "";
     var currentDate = new Date();
     var day = currentDate.getDate();
     var days = currentDate.getDay();
@@ -17,6 +18,19 @@ function dateMessage() {
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var year = currentDate.getFullYear();
 
-    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + ", " + year;
+
+    if (day == 1 && 21 && 31) {
+        end = "st";
+
+    } else if (day == 2 && 22) {
+        end = "nd";
+    } else if (day == 3 && 23) {
+        end = "rd";
+    } else {
+        end = "th";
+    }
+
+    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year;
+
 
 }
