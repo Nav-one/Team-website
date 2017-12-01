@@ -1,3 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Zach's Greeting
 
 function randomGreeting() {
@@ -19,12 +61,12 @@ function dateMessage() {
     var year = currentDate.getFullYear();
 
 
-    if (day == 1 && 21 && 31) {
+    if (day == 1 || 21 || 31) {
         end = "st";
 
-    } else if (day == 2 && 22) {
+    } else if (day == 2 || 22) {
         end = "nd";
-    } else if (day == 3 && 23) {
+    } else if (day == 3 || 23) {
         end = "rd";
     } else {
         end = "th";
@@ -63,13 +105,6 @@ function birthdayCountDown(happybirthday) {
 
 
 }
-
-
-
-
-
-
-
 
 
 //Brandon's Super Secret Functions that is better than Matthew Gao's
