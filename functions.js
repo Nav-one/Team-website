@@ -1,4 +1,4 @@
-// Greeting
+//Zach's Greeting
 
 function randomGreeting() {
     var greetings = ["Hi", "Howdy", "Bonjour", "Ciao", "Buenos días"];
@@ -6,7 +6,7 @@ function randomGreeting() {
     return greetings[randomNum];
 }
 
-//Date Message
+//Giorvi's Date Message
 
 function dateMessage() {
     var end = "";
@@ -33,4 +33,69 @@ function dateMessage() {
     return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year;
 
 
+}
+
+//Brandon's Birthday Countdown
+
+function birthdayCountDown(happybirthday) {
+    var today = new Date();
+
+    var myBirthday = new Date(happybirthday);
+
+    myBirthday.setFullYear(today.getFullYear());
+
+    if (today.getTime() > myBirthday.getTime()) {
+
+        myBirthday.setFullYear(today.getFullYear() + 1);
+    }
+
+    var diff = myBirthday.getTime() - today.getTime();
+
+    var days_exact = ((myBirthday.getTime() - today.getTime()) / 86400000);
+
+    var days = Math.floor(days_exact);
+
+    var hours = Math.floor((days_exact % days) * 24);
+
+    var minutes = Math.floor((((days_exact % days) * 24) % hours) * 60);
+
+    return "The time until my birthday is: " + days + " days, " + hours + " hours, and " + minutes + " minutes!" + "</br>" + "</br>";
+
+
+}
+
+
+
+
+
+
+
+
+
+//Brandon's Super Secret Functions that is better than Matthew Gao's
+function hello(min, max) {
+    var num = Math.floor((max - min + 1) * Math.random());
+
+
+
+    if (num == 0) {
+        return num + 2
+    }
+    if (num % 2 == 0) {
+        return num;
+    } else {
+        return num + 1;
+    }
+
+}
+
+function goodbye(min, max) {
+    var numodd = Math.floor((max - min + 1) * Math.random());
+
+
+    if (numodd % 2 == 1) {
+        return numodd;
+    } else {
+        return numodd + 1;
+    }
 }
