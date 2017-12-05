@@ -64,7 +64,7 @@ function randomGreeting(d) {
 
         var minutes = Math.floor((((days_exact % days) * 24) % hours) * 60);
 
-        return "The time until my birthday is: " + days + " days, " + hours + " hours, and " + minutes + " minutes!" + "</br>" + "</br>";
+        return "The time until my birthday is: " + days + " days, " + hours + " hours, and " + minutes + " minutes!";
 
 
     }
@@ -84,7 +84,7 @@ function randomGreeting(d) {
 
 
         if (num == 0) {
-            return num + 2
+            return num + 2;
         }
         if (num % 2 == 0) {
             return num;
