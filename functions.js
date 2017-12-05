@@ -4,11 +4,14 @@ function randomGreeting(d) {
     var hour = d.getHours();
     var day = d.getDay();
     if (hour <= 10 && day == 1) {
-        return "Ugh, it's monday morning!"
+        return "Ugh, it's monday morning!";
     } else if (hour <= 10 && day == 0 || day == 6) {
-        return "Go back to sleep, it's the weekend!"
-    } else if (hour <= 10 && day != 1) {
-        return "Good Morning"
+        return "Go back to sleep, it's the weekend!";
+    } else if (hour <= 10 && day != 1,0,6) {
+        return "Good Morning";
+    }
+    if (hour >= 10 && hour <= 18 && day != 0 || day != 6){
+        return "Good Day";
     }
 
 
