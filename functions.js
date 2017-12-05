@@ -13,6 +13,7 @@ function randomGreeting(d) {
     if (hour >= 10 && hour <= 18 && day != 0 || day != 6){
         return "Good Day";
     }
+}
 
 
     //Giorvi's Date Message
