@@ -39,7 +39,7 @@ function dateMessage() {
         end = "th";
     }
 
-    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year;
+    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year +  "</br>" ;
 
 
 }
