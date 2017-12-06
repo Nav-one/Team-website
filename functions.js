@@ -49,7 +49,7 @@ function dateMessage() {
         end = "th";
     }
 
-    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year;
+    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year +  "</br>" ;
 
 
 }
@@ -78,7 +78,7 @@ function birthdayCountDown(happybirthday) {
 
     var minutes = Math.floor((((days_exact % days) * 24) % hours) * 60);
 
-    return "The time until my birthday is: " + days + " days, " + hours + " hours, and " + minutes + " minutes!";
+    return "My birthday is " + days + " days, " + hours + " hours, and " + minutes + " minutes away! </br> </br>";
 
 
 }
