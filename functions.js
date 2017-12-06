@@ -7,8 +7,10 @@ function greeting() {
     var result = "";
     if (hour <= 10 && day == 1) {
         result = "Ugh, it's monday morning!";
+
     } else if (hour <= 10 && day == 0 || day == 6) {
         result = "Go back to sleep, it's the weekend!";
+
     } else if (hour <= 10 && day == 2 || day == 3 || day == 4 || day == 5) {
         result = "Good Morning";
     }
@@ -19,6 +21,7 @@ function greeting() {
     }
     if (hour >= 18 && day == 0 ){
         result = "Enjoy your evening...tomorrow is Monday!";
+
     } else if (hour >=18 && day != 0){
         result = "Good Evening"
     }
