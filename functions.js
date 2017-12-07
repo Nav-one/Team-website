@@ -8,22 +8,40 @@ function greeting() {
     if (hour <= 10 && day == 1) {
         result = "Ugh, it's monday morning! </br>";
 
-    } else if (hour <= 10 && day == 0 || day == 6) {
+    } else if (hour <= 10 && day == 0) {
         result = "Go back to sleep, it's the weekend! </br>";
 
-    } else if (hour <= 10 && day == 2 || day == 3 || day == 4 || day == 5) {
+    } else if (hour <= 10 && day == 6) {
+        result = "Go back to sleep, it's the weekend! </br>";
+
+    } else if (hour <= 10 && day == 2) {
         result = "Good Morning </br>";
-    }
-    if (hour >= 10 && hour <= 18 && day !== 0 || day !== 6) {
+
+    } else if (hour <= 10 && day == 3) {
+        result = "Good Morning </br>";
+
+    } else if (hour <= 10 && day == 4) {
+        result = "Good Morning </br>";
+
+    } else if (hour <= 10 && day == 5) {
+        result = "Good Morning </br>";
+
+    } else if (hour >= 10 && hour <= 18 && day == 0) {
+        result = "Hope you are having a great weekend! </br>";
+
+    } else if (hour >= 10 && hour <= 18 && day == 6) {
+        result = "Hope you are having a great weekend! </br>";
+
+    } else if (hour >= 10 && hour <= 18 && day != 0) {
         result = "Good Day </br>";
 
-    } else if (hour >= 10 && hour <= 18 && day == 0 || day == 6){
-        result = "Hope you are having a great weekend! </br>";
-    }
-    if (hour >= 18 && day == 0 ){
+    } else if (hour >= 10 && hour <= 18 && day != 6) {
+        result = "Good Day </br>";
+
+    } else if (hour >= 18 && day == 0) {
         result = "Enjoy your evening...tomorrow is Monday! </br>";
 
-    } else if (hour >= 18 && day != 0){
+    } else if (hour >= 18 && day != 0) {
         result = "Good Evening </br>";
     }
     return result;
@@ -53,7 +71,7 @@ function dateMessage() {
         end = "th";
     }
 
-    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year +  "</br>" ;
+    return "Today is " + dayAr[days] + ", " + months[month] + " " + day + end + ", " + year + "</br>";
 
 
 }
