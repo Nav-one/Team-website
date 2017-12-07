@@ -90,8 +90,6 @@ function birthdayCountDown(happybirthday) {
         myBirthday.setFullYear(today.getFullYear() + 1);
     }
 
-    var diff = myBirthday.getTime() - today.getTime();
-
     var days_exact = ((myBirthday.getTime() - today.getTime()) / 86400000);
 
     var days = Math.floor(days_exact);
