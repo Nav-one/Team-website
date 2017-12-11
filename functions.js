@@ -6,24 +6,25 @@ function greeting() {
     var day = today.getDay();
     var result = "";
     if (hour <= 10 && day == 1) {
-        result = "Ugh, it's monday morning!";
+        result = "Ugh, it's monday morning! </br>";
 
     } else if (hour <= 10 && day == 0 || day == 6) {
-        result = "Go back to sleep, it's the weekend!";
+        result = "Go back to sleep, it's the weekend! </br>";
 
     } else if (hour <= 10 && day == 2 || day == 3 || day == 4 || day == 5) {
-        result = "Good Morning";
+        result = "Good Morning </br>";
     }
-    if (hour >= 10 && hour <= 18 && day != 0 || day != 6) {
-        result = "Good Day";
-    } else if (hour >= 10 && hour <=18 && day == 0 || day == 6){
-        result = "Hope you are having a great weekend!";
+    if (hour >= 10 && hour <= 18 && day !== 0 || day !== 6) {
+        result = "Good Day </br>";
+
+    } else if (hour >= 10 && hour <= 18 && day == 0 || day == 6){
+        result = "Hope you are having a great weekend! </br>";
     }
     if (hour >= 18 && day == 0 ){
-        result = "Enjoy your evening...tomorrow is Monday!";
+        result = "Enjoy your evening...tomorrow is Monday! </br>";
 
-    } else if (hour >=18 && day != 0){
-        result = "Good Evening"
+    } else if (hour >= 18 && day != 0){
+        result = "Good Evening </br>";
     }
     return result;
 }
